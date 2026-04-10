@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mathieu</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-image: url('Capture d’écran 2026-04-10 150151.png');
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    h1 {
+      font-size: 3em;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    /* 🎵 bouton musique */
+    #btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 12px 18px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background: black;
+      color: white;
+    }
+
+    #btn:hover {
+      background: #333;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>je suis le prire prof de compta</h1>
+
+<!-- 🎵 MUSIQUE -->
+<audio id="music" loop>
+  <source src="Chanson pour Nicolas.mp3" type="audio/mpeg">
+</audio>
+
+<!-- 🔊 BOUTON -->
+<button id="Mathieuuuu" onclick="playMusic()">🔊 Lancer la musique</button>
+
+<script>
+  function playMusic() {
+    const audio = document.getElementById("music");
+    audio.play();
+  }
+</script>
+
+</body>
+</html>
